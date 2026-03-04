@@ -1,0 +1,21 @@
+{
+  "runID": "559d1802-bd05-45a1-9cbd-2467068909dc",
+  "seed": 42,
+  "clinicianSeed": 1772482852740,
+  "referenceTime": "20260302",
+  "endTime": "20260302",
+  "version": "0a934f8\n",
+  "patientCount": 5141,
+  "providerCount": 1235,
+  "payerCount": 9,
+  "javaVersion": "17.0.18",
+  "generate.thread_pool_size": -1,
+  "generatorThreads": 8,
+  "runStartTime": "2026-03-02T20:20:52Z",
+  "runTimeInSeconds": 293,
+  "exporter.years_of_history": "10",
+  "gender": "F",
+  "age": "18-45",
+  "state": "Washington",
+  "modules": "*"
+}

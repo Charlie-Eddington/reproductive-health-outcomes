@@ -1,0 +1,86 @@
+=======================================================
+  Dataset Summary Report
+=======================================================
+  Generated    : 2026-03-02 12:25:46
+  State        : Washington
+  Gender       : Female
+  Age Range    : 18–45
+  Seed         : 42
+  Output folder: /Users/charlieeddington/Desktop/Projects/synthea-health/Womens_Health_Analysis
+
+-------------------------------------------------------
+  PATIENTS.CSV
+-------------------------------------------------------
+  Rows         : 5,141
+  Columns      : 28
+  Column names : Id, BIRTHDATE, DEATHDATE, SSN, DRIVERS, PASSPORT, PREFIX, FIRST, MIDDLE, LAST, SUFFIX, MAIDEN, MARITAL, RACE, ETHNICITY, GENDER, BIRTHPLACE, ADDRESS, CITY, STATE, COUNTY, FIPS, ZIP, LAT, LON, HEALTHCARE_EXPENSES, HEALTHCARE_COVERAGE, INCOME
+
+  Numeric columns:
+    FIPS                           count= 4,284  avg=  52997.66  min=  41059.00  max=  53077.00
+    ZIP                            count= 5,141  avg=  82026.14  min=      0.00  max=  99403.00
+    LAT                            count= 5,141  avg=     47.34  min=     45.56  max=     49.01
+    LON                            count= 5,141  avg=   -121.67  min=   -124.64  max=   -117.02
+    HEALTHCARE_EXPENSES            count= 5,141  avg= 162696.77  min=    646.44  max=1454511.83
+    HEALTHCARE_COVERAGE            count= 5,141  avg= 443757.91  min=      0.00  max=1956122.81
+    INCOME                         count= 5,141  avg= 100387.23  min=     11.00  max= 993289.00
+
+  Categorical columns (top values):
+    PREFIX                         Ms. (2,563), Mrs. (2,506)
+    SUFFIX                         MD (22), PhD (20), JD (16)
+    MARITAL                        M (2,220), S (673), D (250)
+    RACE                           white (4,005), asian (467), black (242)
+    ETHNICITY                      nonhispanic (4,519), hispanic (622)
+
+-------------------------------------------------------
+  CONDITIONS.CSV
+-------------------------------------------------------
+  Rows         : 143,032
+  Columns      : 7
+  Column names : START, STOP, PATIENT, ENCOUNTER, SYSTEM, CODE, DESCRIPTION
+
+  Numeric columns:
+    CODE                           count=143,032  avg=60230154948333.96  min=1734006.00  max=10939881000119104.00
+
+  Categorical columns (top values):
+    SYSTEM                         SNOMED-CT (143,032)
+
+-------------------------------------------------------
+  MEDICATIONS.CSV
+-------------------------------------------------------
+  Rows         : 87,164
+  Columns      : 13
+  Column names : START, STOP, PATIENT, PAYER, ENCOUNTER, CODE, DESCRIPTION, BASE_COST, PAYER_COVERAGE, DISPENSES, TOTALCOST, REASONCODE, REASONDESCRIPTION
+
+  Numeric columns:
+    CODE                           count=87,164  avg= 799373.62  min= 105585.00  max=2123111.00
+    BASE_COST                      count=87,164  avg=    265.18  min=      0.01  max= 160201.20
+    PAYER_COVERAGE                 count=87,164  avg=    124.79  min=      0.00  max= 141304.00
+    DISPENSES                      count=87,164  avg=     12.67  min=      1.00  max=    546.00
+    TOTALCOST                      count=87,164  avg=   4685.65  min=      0.01  max=33783606.00
+    REASONCODE                     count=39,292  avg=458021951632.65  min=5602001.00  max=132281000119108.00
+
+  Categorical columns (top values):
+    PAYER                          df166300-5a78-3502-a46a-832842197811 (16,885), 26aab0cd-6aba-3e1b-ac5b-05c8867e762c (14,817), a735bf55-83e9-331a-899d-a82a60b9f60c (9,602)
+
+-------------------------------------------------------
+  ENCOUNTERS.CSV
+-------------------------------------------------------
+  Rows         : 279,516
+  Columns      : 15
+  Column names : Id, START, STOP, PATIENT, ORGANIZATION, PROVIDER, PAYER, ENCOUNTERCLASS, CODE, DESCRIPTION, BASE_ENCOUNTER_COST, TOTAL_CLAIM_COST, PAYER_COVERAGE, REASONCODE, REASONDESCRIPTION
+
+  Numeric columns:
+    CODE                           count=279,516  avg=259692760938.92  min=1505002.00  max=453131000124105.00
+    BASE_ENCOUNTER_COST            count=279,516  avg=    114.66  min=     57.30  max=    139.80
+    TOTAL_CLAIM_COST               count=279,516  avg=   5471.06  min=     75.00  max= 204142.10
+    PAYER_COVERAGE                 count=279,516  avg=   4176.60  min=      0.00  max= 204092.10
+    REASONCODE                     count=211,862  avg=486279422959.92  min=1734006.00  max=442571000124108.00
+
+  Categorical columns (top values):
+    PAYER                          df166300-5a78-3502-a46a-832842197811 (62,471), 26aab0cd-6aba-3e1b-ac5b-05c8867e762c (49,131), e03e23c9-4df1-3eb6-a62d-f70f02301496 (26,254)
+    ENCOUNTERCLASS                 ambulatory (154,233), outpatient (60,926), wellness (44,244)
+
+=======================================================
+  Generated with Synthea™ (MITRE Corporation)
+  https://github.com/synthetichealth/synthea
+=======================================================

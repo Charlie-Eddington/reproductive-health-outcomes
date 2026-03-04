@@ -1,0 +1,18 @@
+# Core data
+pandas==2.2.2
+numpy==1.26.4
+
+# Database
+sqlite3  # built into Python, no install needed
+
+# Notebook
+jupyter==1.0.0
+ipykernel==6.29.4
+
+# Visualization
+plotly==5.22.0
+nbformat==5.10.4
+
+# Synthea generator
+subprocess  # built into Python, no install needed
+pathlib     # built into Python, no install needed
